@@ -4,6 +4,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .clearfix::after{
@@ -14,7 +15,17 @@
 
 /*  font-family: 'Montserrat', sans-serif; */
 /* ******************** Utility ******************** */
+.grey_bg{
+    background-color: lightgrey;
+    height: 100px;
+    width: 100%;
+}
 
+.white_bg{
+    background-color: white;
+    height: 100px;
+    width: 100%;
+}
 
 /* ******************** Site Header ******************** */
 header select{
@@ -27,17 +38,16 @@ header a {
 }
 /* Site Navigation */
 #site_navigation{
-    height: 30vh;
+    height: 200px;
     width: 100%;
-    background-color: aqua;
 }
 
 /* Top Navigation */
 .top_nav{
-    height: 50%;
+    height: 100px;
     width: 70%;
     margin: auto;
-    background-color: greenyellow;
+    background-color: lightgrey;
 }
 .left_top{
     width: 50%;
@@ -65,23 +75,54 @@ header a {
 }
 
 .right_top img{
-    height: 30%;    
+    height: 20px;    
 }
 
 .right_top a{
-    padding: 10px 5px;
+    padding: 10px 10px;
     border-radius: 5px;
     margin-left: 1rem;
-    border: 1px solid black;
+    font-weight: 600;
+}
+.right_top a:first-of-type{
+    background-color: white;
+    border: 2px solid red;
+    color: red;
+}
+
+.right_top a:nth-of-type(2){
+    background-color: red;
+    color: white;
+    border: 2px solid red;
 }
 
 /* Bottom Navigation */
 .bottom_nav{
-    height: 50%;
+    height: 100px;
     width: 70%;
     margin: auto;
-    background-color: red;
 }
+
+.bottom_nav img{
+    height: 30px;
+    margin-top: 35px;
+}
+
+.bottom_nav form{
+    float: right;
+    line-height: 100px;   
+}
+
+.bottom_nav form select{
+    margin-left: 20px; 
+    padding-right: 10px; 
+}
+
+.bottom_nav form select:nth-of-type(2){
+    appearance: none;
+    margin-right: -10px;
+}
+
 
 
 /* ******************** Site  Main ******************** */
