@@ -33,6 +33,10 @@
     border-radius: 50%;
     margin-right: 1rem;
 }
+.h3_text{
+    font-size: 30px;
+    margin-bottom: 1.5rem;
+}
 
 /* ******************** Site Header ******************** */
 header select{
@@ -258,10 +262,7 @@ header a {
     float: left;
     text-align: left;
 }
-.block_2_right h3{
-    font-size: 30px;
-    margin-bottom: 1.5rem;
-}
+
 .block_2_right h4{
     text-transform: uppercase;
     margin: 1rem 1rem 1.5rem 0;
@@ -270,7 +271,9 @@ header a {
 
 .block_2_right p{
     line-height: 30px;
-    font-size: 20px;
+    font-size: 0.9rem;
+    width: 80%;
+
 }
 .block_2_right span{
     font-weight: 600;
@@ -293,11 +296,48 @@ header a {
     height: 650px;
     width: 30%;
     float: left;
-    background-color: yellowgreen;
+    border: 1px solid black;
+    padding: 1.5rem 1.5rem;
+    background-color: aqua;
 }
 .block_3 .col:nth-of-type(2){
     margin: 0 5%;
 }
+
+.block_3 .col img{
+    height: 100px;
+    margin-top: 1rem;
+}
+
+.block_3 .col h3{
+    margin-top:1rem;
+}
+
+.block_3 .col p{
+    height: 180px;
+    padding: 2rem 0;
+    font-size: 0.9rem;
+}
+
+.block_3 .col h4{
+    text-transform: uppercase;
+    padding: 2rem 0;
+}
+.block_3 .col span{
+    display: block;
+    text-align: left;
+}
+.block_3 .col span:last-of-type{
+    margin-bottom: 3.5rem;
+}
+.block_3 .col a{
+    background-color: #FE775A;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+
+}
+
 /* page 3 -- Big Table with dates */
 
 
