@@ -16,13 +16,13 @@
 /*  font-family: 'Montserrat', sans-serif; */
 /* ******************** Utility ******************** */
 .grey_bg{
-    background-color: lightgrey;
+    background-color: #F4F9FD;
     height: 100px;
     width: 100%;
 }
 
 .white_bg{
-    background-color: white;
+    background-color: #FFFFFF;
     height: 100px;
     width: 100%;
 }
@@ -47,7 +47,6 @@ header a {
     height: 100px;
     width: 70%;
     margin: auto;
-    background-color: lightgrey;
 }
 .left_top{
     width: 50%;
@@ -58,11 +57,13 @@ header a {
 .left_top select{
     width: 80px;
     margin: 10px 30px 10px 0;
+    font-weight: 600;
 }
 
 .left_top a{
     border-left: 2px solid black;
     padding-left: 20px;
+    font-weight: 600;
 }
 
 
@@ -86,14 +87,14 @@ header a {
 }
 .right_top a:first-of-type{
     background-color: white;
-    border: 2px solid red;
-    color: red;
+    border: 2px solid #FE775A;
+    color: #FE775A;
 }
 
 .right_top a:nth-of-type(2){
-    background-color: red;
+    background-color: #FE775A;
     color: white;
-    border: 2px solid red;
+    border: 2px solid #FE775A;
 }
 
 /* Bottom Navigation */
@@ -116,6 +117,7 @@ header a {
 .bottom_nav form select{
     margin-left: 20px; 
     padding-right: 10px; 
+    font-weight: 600;
 }
 
 .bottom_nav form select:nth-of-type(2){
@@ -131,8 +133,54 @@ header a {
 
 
 /* Page 1 -- Big Immage Background */
+.bg_img{
+    height: 840px;
+    width: 100%;
+    background-color: #fff2ee;
+    background-image: url(../img/jumbotron.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+}
 
+.cover_bar{
+    height: 100px;
+    width: 100%;
+    background-color: #AFEBE4;
+    position: absolute;
+    bottom: 0;
+    border-top: 5px solid #33475B;
+    border-bottom: 5px solid #33475B;
+}
 
+.jumbotext{
+    width: 40%;
+    margin-left: 15%;
+}
+
+.jumbotext h1{
+    font-size: 60px; 
+    font-weight: 800;
+    padding-top: 5rem;
+}
+
+.jumbotext p{
+    margin-top: 3rem;
+    font-size: 25px;
+    font-weight: 400;
+
+}
+
+.jumbotext button{
+    margin-top: 3rem;
+    background-color: red;
+    padding: 2rem 4rem;
+    color: white;
+    border-radius: 5px;
+    border: 1px solid red;
+
+}
 /* Page 2 -- Long page with content */
 
 
