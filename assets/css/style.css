@@ -150,6 +150,7 @@ header a {
     background-color: #fff2ee;
     background-image: url(../img/jumbotron.png);
     background-position: right;
+    /* background-position: bottom; */
     background-repeat: no-repeat;
     background-size: contain;
     position: relative;
@@ -406,20 +407,20 @@ header a {
 /* Page 4 --Collaboration parterns */
 .page_4{
     height: 700px;
-    background-color: violet;
+    /* background-color: violet; */
 }
 .container_page_4{
     width: 70%;
     height: 700px;
     margin: auto;
-    background-color: springgreen;
+    /* background-color: springgreen; */
 }
 
 .customers{
     height: 250px;
     width: 40%;
     float: left;
-    background-color: red;
+    /* background-color: red; */
     line-height: 30px;
     /* text-align: center; */
     padding: 3rem 8rem 2rem 6rem;
@@ -433,7 +434,7 @@ header a {
     height: 250px;
     width: 60%;
     float: left;
-    background-color: yellowgreen;
+    /* background-color: yellowgreen; */
     padding: 2rem 4rem;
     line-height: 50px;
 }
@@ -448,25 +449,43 @@ header a {
     height: 450px;
     width: 40%;
     float: left;
-    background-color: brown;
+    /* background-color: brown; */
 }
 .description_4 h3{
     font-size: 28px;
     font-weight: 800;
-    padding: 4rem 0;
+    padding: 3rem 0;
 }
 .description_4 p{
     font-weight: 400;
     line-height: 30px;
+}
+.description_4 p:nth-of-type(1){
+    margin-bottom: 3rem;
+}
+.description_4 p:nth-of-type(2){
+    margin-top: 3rem;
+    font-size: 10px;
+}
+.description_4 a{
+    padding: 1rem 1rem;
+    border: 1px solid #FE775A;
+    border-radius: 5px;
+    color: white;
+    background-color: #FE775A;
 }
 
 .img_page_4{
     height: 450px;
     width: 60%;
     float: left;
-    background-color: red;
+    /* background-color: red; */
 }
 
+.img_page_4 img{
+    height: 400px;
+    float: right;
+}
 
 
 
