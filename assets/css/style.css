@@ -14,7 +14,7 @@
     clear: both;
 }
 
-/*  font-family: 'Montserrat', sans-serif; */
+
 /* ******************** Utility ******************** */
 .grey_bg{
     background-color: #F4F9FD;
@@ -39,6 +39,8 @@
     margin-bottom: 1.5rem;
 }
 
+
+
 /* ******************** Site Header ******************** */
 header select{
     background-color: transparent;
@@ -54,41 +56,50 @@ header a {
     width: 100%;
 }
 
+
 /* Top Navigation */
+
+
 .top_nav{
     height: 100px;
     width: 70%;
     margin: auto;
 }
+
 .left_top{
     width: 50%;
     float: left;
     padding-top: 30px;
 
 }
+
 .left_top select{
     width: 80px;
     margin: 10px 30px 10px 0;
-    font-weight: 600;
+    font-weight: 400;
+    color: #33475B;
 }
 
 .left_top a{
     border-left: 2px solid black;
     padding-left: 20px;
-    font-weight: 600;
+    font-weight: 400;
+    color: #33475B;
 }
-
 
 .right_top{
     width: 50%;
     height: 100%;
-    padding-top: 30px;
     float: left;
     text-align: right;
+    line-height: 100px;
+
 }
 
 .right_top img{
-    height: 20px;    
+    height: 20px; 
+    line-height: 100px;
+    vertical-align: middle;   
 }
 
 .right_top a{
@@ -109,32 +120,40 @@ header a {
     border: 2px solid #FE775A;
 }
 
+
+
 /* Bottom Navigation */
+
+
 .bottom_nav{
     height: 100px;
     width: 70%;
     margin: auto;
+    line-height: 100px;
+    vertical-align: middle;
 }
 
-.bottom_nav img{
-    height: 30px;
-    margin-top: 35px;
+.bottom_nav_img{
+    height: 100px;
+    width: 30%;
+    float: left;
 }
-
-.bottom_nav form{
-    float: right;
-    line-height: 100px;   
+.bottom_nav_img img{
+    transform: translateY(10px);
 }
-
-.bottom_nav form select{
-    margin-left: 20px; 
-    padding-right: 10px; 
-    font-weight: 600;
+.bottom_nav_voice{
+    height: 100px;
+    width: 70%;
+    float: left;
+    text-align: right;
 }
-
-.bottom_nav form select:nth-of-type(2){
-    appearance: none;
-    margin-right: -10px;
+.bottom_nav_voice a{
+    margin-left: 20px;
+    color: #33475B;
+    font-weight: 400;
+}
+.bottom_nav_voice i{
+    margin-left: 5px;
 }
 
 
@@ -145,6 +164,7 @@ header a {
 
 
 /* Page 1 -- Big Immage Background */
+
 .bg_img{
     height: 690px;
     width: 100%;
@@ -156,8 +176,8 @@ header a {
     position: relative;
 }
 
-.cover_bar{
-    height: 85px;
+.bg_img::after{
+    height: 75px;
     width: 100%;
     background-color: #AFEBE4;
     position: absolute;
@@ -174,7 +194,7 @@ header a {
 .jumbotext h1{
     font-size: 50px; 
     font-weight: 800;
-    padding-top: 5rem;
+    padding-top: 3rem;
 }
 
 .jumbotext p{
@@ -193,9 +213,11 @@ header a {
     color: white;
     border-radius: 5px;
     border: 1px solid red;
-
 }
+
+
 /* Page 2 -- Long page with content */
+
 
 .page_2{
     height: 1500px;
@@ -223,7 +245,7 @@ header a {
 }
 .block_1 p{
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 400;
     line-height: 35px;
     padding: 2rem 6rem;
 }
@@ -248,7 +270,6 @@ header a {
     margin-bottom: 2rem;
 }
 
-
 .btn{
     background-color: #FE775A;
     padding: 1rem 2rem;
@@ -256,6 +277,7 @@ header a {
     border-radius: 5px;
 
 }
+
 .block_2_right{
     width: 70%;
     height: 100%;
@@ -269,6 +291,11 @@ header a {
     font-size: 20px;
 }
 
+.block_2_right h4::after{
+    content: "___________________________________________";
+    margin-left: 4rem;
+}
+
 .block_2_right p{
     line-height: 30px;
     font-size: 0.9rem;
@@ -279,9 +306,6 @@ header a {
     font-weight: 600;
     margin-right: 30px;
 }
-
-
-
 
 
 /*------- Block 3 ------- */
@@ -298,6 +322,7 @@ header a {
     border: 1px solid black;
     padding: 1.5rem 1.5rem;
 }
+
 .block_3 .col:nth-of-type(2){
     margin: 0 5%;
 }
@@ -321,27 +346,33 @@ header a {
     text-transform: uppercase;
     padding: 2rem 0;
 }
+
 .block_3 .col span{
     display: block;
     text-align: left;
 }
+
 .block_3 .col span:last-of-type{
     margin-bottom: 3.5rem;
 }
+
 .block_3 .col a{
     background-color: #FE775A;
     color: white;
     padding: 1rem 2rem;
     border-radius: 5px;
-
 }
 
+
+
 /* page 3 -- Big Table with dates */
+
 
 .page_3{
     height: 700px;
     background: linear-gradient(0.25turn, #00A8BA, #00B9A9);
 }
+
 .container_page_3{
     width: 70%;
     margin: auto;
@@ -361,7 +392,6 @@ header a {
     font-size: 15px;
 }
 
-
 .table_3{
     height: 400px;
 }
@@ -372,23 +402,27 @@ header a {
     float: left;
     padding: 1rem 0;
 }
+
 .small_box img{
     height: 40px;
-
 }
+
 .small_box span{
     display: block;
 }
+
 .small_box span:nth-of-type(1){
     font-size: 50px;
     font-weight: 800;
     padding: 1rem 0;
 }
+
 .small_box span:nth-of-type(1)::after{
    content: "\002B";
    font-weight: 400;
    margin-left: 5px;
 }
+
 .small_box span:nth-of-type(2){
     font-weight: 600;
 }
@@ -425,6 +459,10 @@ header a {
     padding-bottom: 2rem;
 }
 
+.customers p{
+    width: 70%;
+}
+
 .parterns{
     height: 250px;
     width: 60%;
@@ -439,33 +477,40 @@ header a {
     vertical-align: middle;
 
 }
+
 .description_4{
     height: 450px;
     width: 40%;
     float: left;
 }
+
 .description_4 h3{
     font-size: 28px;
     font-weight: 800;
     padding: 3rem 0;
 }
+
 .description_4 p{
     font-weight: 400;
     line-height: 30px;
 }
+
 .description_4 p:nth-of-type(1){
     margin-bottom: 3rem;
 }
+
 .description_4 p:nth-of-type(2){
     margin-top: 3rem;
     font-size: 10px;
 }
+
 .description_4 a{
     padding: 1rem 1rem;
     border: 1px solid #FE775A;
     border-radius: 5px;
     color: white;
     background-color: #FE775A;
+    text-decoration: none;
 }
 
 .img_page_4{
@@ -482,14 +527,17 @@ header a {
 
 
 /* ******************** Site Footer ******************** */
+
 footer{
     background-color: #32495B;
 }
+
 .footer_container{
     height: 650px;
     width: 70%;
     margin: auto;
 }
+
 .footer_container a{
     display: block;
     text-decoration: none;
@@ -501,11 +549,13 @@ footer{
 .collegamenti{
     height: 400px;
 }
+
 .col_25{
     width: 25%;
     height: 400px;
     float: left;
 }
+
 .col_25 h4{
     color: white;
     margin: 35px 0;
@@ -520,6 +570,7 @@ footer{
     color: #32495B;
     border-radius: 5px;
 }
+
 .col_25:last-of-type i{
     color: white;
     margin-right: 1.8rem;
@@ -537,6 +588,7 @@ footer{
     display: inline-block;
     padding: 0 1rem;
 }
+
 .privacy{
     height: 150px;
     padding-top: 2rem;
@@ -547,19 +599,23 @@ footer{
     width: 50%;
     float: left;
 }
+
 .logo_privacy span{
     color: white;
     font-size: 13px;
 }
+
 .logo_privacy img{
     filter: brightness(4.25);
 }
+
 .legal{
     height: 100px;
     width: 50%;
     float: left;
     text-align: right;
 }
+
 .legal a{
     display: inline-block;
     padding: 0 1rem;
