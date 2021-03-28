@@ -4,7 +4,8 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Montserrat', sans-serif; */
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .clearfix::after{
@@ -145,19 +146,18 @@ header a {
 
 /* Page 1 -- Big Immage Background */
 .bg_img{
-    height: 840px;
+    height: 690px;
     width: 100%;
     background-color: #fff2ee;
     background-image: url(../img/jumbotron.png);
     background-position: right;
-    /* background-position: bottom; */
+    background-position: 100% 100%;
     background-repeat: no-repeat;
-    background-size: contain;
     position: relative;
 }
 
 .cover_bar{
-    height: 100px;
+    height: 85px;
     width: 100%;
     background-color: #AFEBE4;
     position: absolute;
@@ -172,22 +172,24 @@ header a {
 }
 
 .jumbotext h1{
-    font-size: 60px; 
+    font-size: 50px; 
     font-weight: 800;
     padding-top: 5rem;
 }
 
 .jumbotext p{
-    margin-top: 3rem;
-    font-size: 25px;
+    margin-top: 2rem;
+    font-size: 20px;
     font-weight: 400;
-
+}
+.jumbotext p:last-of-type{
+    font-size: 15px;
 }
 
 .jumbotext button{
-    margin-top: 3rem;
+    margin-top: 2rem;
     background-color: red;
-    padding: 2rem 4rem;
+    padding: 20px 40px;
     color: white;
     border-radius: 5px;
     border: 1px solid red;
@@ -211,7 +213,6 @@ header a {
 /*------- Block 1 ------- */
 .block_1{
     height: 340px;
-    /* background-color: rgba(255, 0, 0, 0.191); */
     padding-top: 45px;
 }
 .block_1 img{
@@ -234,7 +235,6 @@ header a {
     background-color: white;
     margin-top: 35px;
     padding: 4rem 4rem;
-    /* border: 1px solid rgba(0, 0, 0, 0.5); */
     box-shadow:5px 5px rgba(0, 0, 0, 0.1);
 }
 .block_2_left{
@@ -257,7 +257,6 @@ header a {
 
 }
 .block_2_right{
-    /* background-color: rgba(32, 102, 26, 0.301); */
     width: 70%;
     height: 100%;
     float: left;
@@ -293,7 +292,6 @@ header a {
 }
 
 .col{
-    /* width: (( 100% - 6% ) / 3 ); */
     height: 650px;
     width: 30%;
     float: left;
@@ -405,24 +403,21 @@ header a {
 
 
 /* Page 4 --Collaboration parterns */
+
 .page_4{
     height: 700px;
-    /* background-color: violet; */
 }
 .container_page_4{
     width: 70%;
     height: 700px;
     margin: auto;
-    /* background-color: springgreen; */
 }
 
 .customers{
     height: 250px;
     width: 40%;
     float: left;
-    /* background-color: red; */
     line-height: 30px;
-    /* text-align: center; */
     padding: 3rem 8rem 2rem 6rem;
 }
 .customers h4{
@@ -434,7 +429,6 @@ header a {
     height: 250px;
     width: 60%;
     float: left;
-    /* background-color: yellowgreen; */
     padding: 2rem 4rem;
     line-height: 50px;
 }
@@ -449,7 +443,6 @@ header a {
     height: 450px;
     width: 40%;
     float: left;
-    /* background-color: brown; */
 }
 .description_4 h3{
     font-size: 28px;
@@ -479,7 +472,6 @@ header a {
     height: 450px;
     width: 60%;
     float: left;
-    /* background-color: red; */
 }
 
 .img_page_4 img{
@@ -490,3 +482,85 @@ header a {
 
 
 /* ******************** Site Footer ******************** */
+footer{
+    background-color: #32495B;
+}
+.footer_container{
+    height: 650px;
+    width: 70%;
+    margin: auto;
+}
+.footer_container a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    margin: 15px 0;
+    font-size: 15px;
+}
+
+.collegamenti{
+    height: 400px;
+}
+.col_25{
+    width: 25%;
+    height: 400px;
+    float: left;
+}
+.col_25 h4{
+    color: white;
+    margin: 35px 0;
+    font-weight: 600;
+}
+
+.col_25:last-of-type a:last-of-type{
+    background-color: white;
+    width: 75%;
+    padding: 10px 5px;
+    font-weight: 600;
+    color: #32495B;
+    border-radius: 5px;
+}
+.col_25:last-of-type i{
+    color: white;
+    margin-right: 1.8rem;
+}
+
+.lingue{
+    height: 100px;
+    line-height: 100px;
+    vertical-align: middle;
+    text-align: center;
+    border-bottom: 1px solid white;
+}
+
+.lingue a{
+    display: inline-block;
+    padding: 0 1rem;
+}
+.privacy{
+    height: 150px;
+    padding-top: 2rem;
+}
+
+.logo_privacy{
+    height: 100px;
+    width: 50%;
+    float: left;
+}
+.logo_privacy span{
+    color: white;
+    font-size: 13px;
+}
+.logo_privacy img{
+    filter: brightness(4.25);
+}
+.legal{
+    height: 100px;
+    width: 50%;
+    float: left;
+    text-align: right;
+}
+.legal a{
+    display: inline-block;
+    padding: 0 1rem;
+}
