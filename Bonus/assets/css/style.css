@@ -52,15 +52,14 @@ header select{
 header a {
     text-decoration: none;
 }
-/* Site Navigation */
+
 #site_navigation{
     height: 200px;
     width: 100%;
 }
 
 
-/* Top Navigation */
-
+/*---------------- Top Navigation ----------------*/
 
 .top_nav{
     height: 100px;
@@ -115,10 +114,20 @@ header a {
     border: 2px solid #FE775A;
     color: #FE775A;
 }
+.right_top a:first-of-type:hover{
+    background-color: #FE775A;
+    border: 2px solid white;
+    color: white;
+}
 
 .right_top a:nth-of-type(2){
     background-color: #FE775A;
     color: white;
+    border: 2px solid #FE775A;
+}
+.right_top a:nth-of-type(2):hover{
+    background-color: white;
+    color: #FE775A;
     border: 2px solid #FE775A;
 }
 
@@ -168,7 +177,9 @@ header a {
 .menu-item:hover .drop-down-menu{
     display: block;
 }
-  
+
+
+/* Dropdown for the right part of bottom navbar */
 .drop-down-menu:before {
     content: "";
     position: absolute;
@@ -219,7 +230,6 @@ header a {
 .drop-down-menu.menu_software:after{
     right: 360px;
 }
-
 
 .software_line{
     margin: 1.5rem 1rem;
@@ -411,9 +421,18 @@ header a {
 
 .jumbotext button{
     margin-top: 2rem;
-    background-color: red;
+    background-color: #FE775A;
     padding: 20px 40px;
     color: white;
+    border-radius: 5px;
+    border: 1px solid #FE775A;
+    font-weight: 600;
+}
+.jumbotext button:hover{
+    margin-top: 2rem;
+    background-color: white;
+    padding: 20px 40px;
+    color: #FE775A;
     border-radius: 5px;
     border: 1px solid red;
 }
@@ -460,7 +479,8 @@ header a {
     background-color: white;
     margin-top: 35px;
     padding: 4rem 4rem;
-    box-shadow:5px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 5px #888888;
+
 }
 .block_2_left{
     height: 100%;
@@ -478,7 +498,15 @@ header a {
     padding: 1rem 2rem;
     border: 1px solid #FE775A;
     border-radius: 5px;
-
+    color: white;
+    font-weight: 600;
+}
+.btn:hover{
+    background-color: white;
+    color: #FE775A;
+    padding: 1rem 2rem;
+    border: 1px solid #FE775A;
+    border-radius: 5px;
 }
 
 .block_2_right{
@@ -522,8 +550,9 @@ header a {
     height: 650px;
     width: 30%;
     float: left;
-    border: 1px solid black;
+    box-shadow: 0px 0px 5px #888888;
     padding: 1.5rem 1.5rem;
+    background-color: white;
 }
 
 .block_3 .col:nth-of-type(2){
@@ -562,6 +591,13 @@ header a {
 .block_3 .col a{
     background-color: #FE775A;
     color: white;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+}
+.block_3 .col a:hover{
+    background-color: white;
+    color: #FE775A;
+    border: 1px solid #FE775A;
     padding: 1rem 2rem;
     border-radius: 5px;
 }
@@ -715,6 +751,11 @@ header a {
     background-color: #FE775A;
     text-decoration: none;
 }
+.description_4 a:hover{
+    border: 1px solid #FE775A;
+    color: #FE775A;
+    background-color: white;
+}
 
 .img_page_4{
     height: 450px;
@@ -765,13 +806,16 @@ footer{
     font-weight: 600;
 }
 
-.col_25:last-of-type a:last-of-type{
+.col_25:last-of-type a:nth-of-type(6){
     background-color: white;
     width: 75%;
     padding: 10px 5px;
     font-weight: 600;
     color: #32495B;
     border-radius: 5px;
+}
+.col_25:last-of-type a:nth-of-type(1n+7){
+    display: inline-block;
 }
 
 .col_25:last-of-type i{
