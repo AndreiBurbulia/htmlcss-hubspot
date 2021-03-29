@@ -124,66 +124,102 @@ header a {
 
 
 
-/* Bottom Navigation */
+/* ----------------Bottom NavBar ---------------- */
 
 
 .bottom_nav{
     height: 100px;
     width: 70%;
     margin: auto;
-    line-height: 100px;
-    vertical-align: middle;
+    color: #33475B;
 }
 
 .bottom_nav_img{
-    height: 100px;
     width: 30%;
+    height: 100px;
     float: left;
-}
-.bottom_nav_img img{
-    transform: translateY(10px);
+    line-height: 100px;
+    vertical-align: middle;
+    margin-top: 10px;
 }
 
-.bottom_nav_voice{
+.menu{
+    height: 100px;
     width: 70%;
     float: left;
     text-align: right;
 }
-.bottom_nav_voice i{
-    margin-left: 5px;
-}
-.bottom_nav_voice span{
-    margin-left: 30px;
+
+.menu-item{
+    cursor: pointer;
+    height: 50px;
+    line-height: 100px;
+    display: inline-block;
+    position: relative;
     color: #33475B;
 
 }
 
-.dropdown {
-    position: relative;
-    display: inline-block;
+.menu-item span{
+    padding: 0 10px;
+    font-weight: 400;
 }
-.dropdown:hover .dropdown-content {
+
+.menu-item:hover .drop-down-menu{
     display: block;
 }
   
-.dropdown-content {
+.drop-down-menu:before {
+    content: "";
+    position: absolute;
+    border-color: rgba(194, 225, 245, 0);
+    border: solid transparent;
+    border-bottom-color: white;
+    border-width: 11px;
+    margin-left: -10px;
+    top: -21px;
+    z-index: 1;
+} 
+   
+.drop-down-menu:after {
+    content: "";
+    position: absolute;
+    top: -21px;
+    width: 0;
+    height: 0;
+    border: solid transparent;
+    border-width: 10px;
+    border-bottom-color: #2B1A41;
+    z-index: 0;
+}
+.drop-down-menu{
     display: none;
     position: absolute;
-    background-color: white;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    margin-top: -20px;
-    z-index: 1;
-}
-  
-#software{
-    width: 650px;
-    right: -440px;
-    padding: 1rem 2rem;
-    border-radius: 5px;
-    border: 1px solid rgba(0, 0, 0, 0.3);
+    background: white;
+    border: 1px solid #301B46;
+    padding: 20px;
+    line-height: normal;
     text-align: left;
-    line-height: 20px
+    z-index: 1;
+    border-radius: 4px;
+    box-shadow: 0px 0px 10px #888888;
 }
+
+
+/* ----------------------  software menu dropdown ----------------------*/
+
+.menu_software{
+    width: 600px;
+    top: 66px;
+    left: -144px;
+}
+.drop-down-menu.menu_software:before{
+    right: 359px;
+}
+.drop-down-menu.menu_software:after{
+    right: 360px;
+}
+
 
 .software_line{
     margin: 1.5rem 1rem;
@@ -191,7 +227,7 @@ header a {
 
 .software_line:hover{
     border-bottom: 1px solid black;
-    background-color: lemonchiffon;
+    background-color: rgba(103, 241, 121, 0.637);
 }
 
 .software_line img{
@@ -225,12 +261,19 @@ header a {
     font-weight: 800;
 }
 
-  #resources_box{
+/* ----------------------  Pricing menu dropdown ----------------------*/
+
+
+/* ----------------------  Resources menu dropdown ----------------------*/
+.drop-down-menu.menu_resources{
     width: 1100px;
-    right: -220px;
-    padding: 2rem 2rem 0 2rem;
-    border-radius: 5px;
-    border: 1px solid rgba(0, 0, 0, 0.3);
+    top: 71px;
+    left: -784px;
+}.drop-down-menu.menu_resources:before{
+    right: 207px;
+}
+.drop-down-menu.menu_resources:after{
+    right: 208px;
 }
 
 .resources_line{
@@ -259,14 +302,19 @@ header a {
     margin-bottom: -2rem;
 }
 
-#nav_partners{
-    width: 800px;
-    right: -100px;
-    padding: 2rem 2rem;
-    border-radius: 5px;
-    border: 1px solid rgba(0, 0, 0, 0.3);
-}
 
+/* ----------------------  Partners menu dropdown ----------------------*/
+.drop-down-menu.menu_partners{
+    width: 800px;
+    top: 71px;
+    left: -603px;
+}
+.drop-down-menu.menu_partners:before{
+    right: 103px;
+}
+.drop-down-menu.menu_partners:after{
+    right: 104px;
+}
 .box_partners{
     width: 50%;
     float: left;
@@ -284,14 +332,18 @@ header a {
     color: #33475B;
 }
 
-#about{
+/* ----------------------  About menu dropdown ----------------------*/
+.drop-down-menu.menu_about{
     width: 600px;
-    right: 0;
-    padding: 2rem 2rem;
-    border-radius: 5px;
-    border: 1px solid rgba(0, 0, 0, 0.3);
+    top: 71px;
+    left: -511px;
 }
-  
+.drop-down-menu.menu_about:before{
+    right: 13px;
+}
+.drop-down-menu.menu_about:after{
+    right: 14px;
+}
 .about_line{
     width: 33%;
     float: left;
@@ -303,6 +355,7 @@ header a {
     display:block;
     color: #33475B;
 }
+
 
 
 
