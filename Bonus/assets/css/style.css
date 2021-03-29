@@ -41,6 +41,8 @@
 
 
 
+
+
 /* ******************** Site Header ******************** */
 header select{
     background-color: transparent;
@@ -257,7 +259,7 @@ header a {
     background-color: white;
     margin-top: 35px;
     padding: 4rem 4rem;
-    box-shadow: 0px 0px 5px #888888;
+    box-shadow:5px 5px rgba(0, 0, 0, 0.1);
 }
 .block_2_left{
     height: 100%;
@@ -319,8 +321,8 @@ header a {
     height: 650px;
     width: 30%;
     float: left;
+    border: 1px solid black;
     padding: 1.5rem 1.5rem;
-    box-shadow: 0px 0px 5px #888888;
 }
 
 .block_3 .col:nth-of-type(2){
@@ -619,4 +621,73 @@ footer{
 .legal a{
     display: inline-block;
     padding: 0 1rem;
+}
+
+
+
+/* ******************** ChatBot ******************** */
+
+.chat_icon{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-color: #33475B;
+    position: fixed;
+    z-index: 2;
+    bottom: 0;
+    right: 0;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+}
+
+.chat_icon img{
+    margin: 12px 0 0 10px;
+}
+
+.chat_icon:hover + .chat_windows{
+    display: inline-block;
+}
+
+.chat_windows{
+    height: 150px;
+    width: 330px;
+    border-radius: 5px;
+    background-color: white;
+    position: fixed;
+    z-index: 2;
+    bottom: 0;
+    right: 0;
+    margin-right: 1rem;
+    margin-bottom: 5.5rem;
+    display: none;
+}
+
+.chat_logo{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-color: white;
+    position: fixed;
+    z-index: 2;
+    bottom: 210px;
+    right: 150px;
+}
+
+.chat_logo img{
+    height: 60px;
+}
+
+.chat_windows i{
+    float: right;
+    color: lightgrey;
+    font-size: 20px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.chat_windows p{
+    color: #33475B;
+    font-size: 20px;
+    word-spacing: 3px;
+    padding: 40px 10px 0 10px;
 }
